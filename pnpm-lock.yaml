@@ -12,6 +12,7 @@ overrides:
   postcss: ^8.5.10
   browserslist: '>=4.28.7'
   fast-uri: '>=3.1.6'
+  zod@>=4.0.0 <4.6.6: '>=4.6.6'
 
 importers:
 
@@ -52,7 +53,7 @@ importers:
         version: 16.4.2(@babel/core@7.29.7)(@opentelemetry/api@1.10.0)(@types/node@26.6.5)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       openai:
         specifier: ^7.35.0
-        version: 7.35.0(@aws-sdk/credential-provider-node@3.972.88)(@smithy/signature-v4@5.7.4)(undici@8.12.3)(ws@8.22.0)(zod@4.4.3)
+        version: 7.35.0(@aws-sdk/credential-provider-node@3.972.88)(@smithy/signature-v4@5.7.4)(undici@8.12.3)(ws@8.22.0)(zod@4.6.7)
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -164,7 +165,7 @@ importers:
         version: 8.71.2(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3)
       unlighthouse:
         specifier: ^0.19.1
-        version: 0.19.1(7izzvrzg6cyrflmhgd3wlqg66y)
+        version: 0.19.1(2fagwjso5gcvithakag63qtma4)
       vite:
         specifier: 8.3.4
         version: 8.3.4(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.15)(yaml@2.9.1)
@@ -1042,7 +1043,7 @@ packages:
       valibot: ^1
       vue-router: ^4.5.0 || ^5
       yup: ^1.7.0
-      zod: ^3.24.0 || ^4
+      zod: '>=4.6.6'
     peerDependenciesMeta:
       '@inertiajs/vue3':
         optional: true
@@ -5463,7 +5464,7 @@ packages:
       '@smithy/signature-v4': '>=5.4.0 <6'
       undici: '>=5 <9'
       ws: ^8.21.0
-      zod: ^3.25 || ^4.0
+      zod: '>=4.6.6'
     peerDependenciesMeta:
       '@aws-sdk/credential-provider-node':
         optional: true
@@ -7067,13 +7068,10 @@ packages:
     resolution: {integrity: sha512-Q6/nZLe6jxuU80qb/4uJ4t5v2VEZ44lzQjPDhYJNztRQ4wyWc6VF3D3Kb/fAuPetZQnhS3hnajCf9CsWesghLQ==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
-      zod: ^3.25.0 || ^4.0.0
+      zod: '>=4.6.6'
 
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
-
-  zod@4.4.3:
-    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
   zod@4.6.7:
     resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
@@ -8064,7 +8062,7 @@ snapshots:
       pkg-types: 2.4.0
       std-env: 4.3.0
 
-  '@nuxt/ui@4.12.0(ijvtdqvsqiynafnvg5eqvyupnq)':
+  '@nuxt/ui@4.12.0(vwbjnokgpmijzhsvl46tnb4zwu)':
     dependencies:
       '@floating-ui/dom': 1.8.0
       '@iconify/vue': 5.0.4(vue@3.5.44(typescript@5.9.3))
@@ -8133,7 +8131,7 @@ snapshots:
     optionalDependencies:
       '@internationalized/date': 3.12.4
       '@internationalized/number': 3.6.9
-      zod: 4.4.3
+      zod: 4.6.7
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -9614,12 +9612,12 @@ snapshots:
       - rollup
       - unloader
 
-  '@unlighthouse/cli@0.19.1(zbuhrbcl2tnk6lffd6uregkb3m)':
+  '@unlighthouse/cli@0.19.1(phmhc46e6u5725kr2glqxlex2i)':
     dependencies:
       '@lhci/utils': 0.15.1
-      '@unlighthouse/client': 0.19.1(5w4tcz4bve3kdywsrub2q33qmy)
-      '@unlighthouse/core': 0.19.1(voq5jkwankzmvvpsur2z46kvmi)
-      '@unlighthouse/server': 0.19.1(zbuhrbcl2tnk6lffd6uregkb3m)
+      '@unlighthouse/client': 0.19.1(teo2elgbt6kb5uqbeab6zpcqrm)
+      '@unlighthouse/core': 0.19.1(3az2t2moazoocssdjnu7wyj6cq)
+      '@unlighthouse/server': 0.19.1(phmhc46e6u5725kr2glqxlex2i)
       cac: 7.1.0
       consola: 3.4.2
       defu: 6.1.7
@@ -9729,9 +9727,9 @@ snapshots:
       - yup
       - zod
 
-  '@unlighthouse/client@0.19.1(5w4tcz4bve3kdywsrub2q33qmy)':
+  '@unlighthouse/client@0.19.1(teo2elgbt6kb5uqbeab6zpcqrm)':
     dependencies:
-      '@nuxt/ui': 4.12.0(ijvtdqvsqiynafnvg5eqvyupnq)
+      '@nuxt/ui': 4.12.0(vwbjnokgpmijzhsvl46tnb4zwu)
       '@tailwindcss/vite': 4.3.3(vite@8.3.4(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(tsx@4.23.15)(yaml@2.9.1))
       defu: 6.1.7
       fuse.js: 7.5.0
@@ -9825,11 +9823,11 @@ snapshots:
       - yup
       - zod
 
-  '@unlighthouse/core@0.19.1(voq5jkwankzmvvpsur2z46kvmi)':
+  '@unlighthouse/core@0.19.1(3az2t2moazoocssdjnu7wyj6cq)':
     dependencies:
       '@clack/prompts': 1.8.1
       '@puppeteer/browsers': 3.2.6(yauzl@2.10.0)
-      '@unlighthouse/client': 0.19.1(5w4tcz4bve3kdywsrub2q33qmy)
+      '@unlighthouse/client': 0.19.1(teo2elgbt6kb5uqbeab6zpcqrm)
       c12: 3.3.4(magicast@0.5.5)
       chrome-launcher: 1.2.2
       consola: 3.4.2
@@ -9950,9 +9948,9 @@ snapshots:
       - yup
       - zod
 
-  '@unlighthouse/server@0.19.1(zbuhrbcl2tnk6lffd6uregkb3m)':
+  '@unlighthouse/server@0.19.1(phmhc46e6u5725kr2glqxlex2i)':
     dependencies:
-      '@unlighthouse/core': 0.19.1(voq5jkwankzmvvpsur2z46kvmi)
+      '@unlighthouse/core': 0.19.1(3az2t2moazoocssdjnu7wyj6cq)
       h3: 1.15.11
       listhen: 1.10.1(@parcel/watcher@2.5.6)
     transitivePeerDependencies:
@@ -11308,8 +11306,8 @@ snapshots:
       '@babel/parser': 7.29.7
       eslint: 9.39.4(jiti@2.7.0)
       hermes-parser: 0.25.1
-      zod: 4.4.3
-      zod-validation-error: 4.0.2(zod@4.4.3)
+      zod: 4.6.7
+      zod-validation-error: 4.0.2(zod@4.6.7)
     transitivePeerDependencies:
       - supports-color
 
@@ -13207,13 +13205,13 @@ snapshots:
       is-docker: 2.2.1
       is-wsl: 2.2.0
 
-  openai@7.35.0(@aws-sdk/credential-provider-node@3.972.88)(@smithy/signature-v4@5.7.4)(undici@8.12.3)(ws@8.22.0)(zod@4.4.3):
+  openai@7.35.0(@aws-sdk/credential-provider-node@3.972.88)(@smithy/signature-v4@5.7.4)(undici@8.12.3)(ws@8.22.0)(zod@4.6.7):
     optionalDependencies:
       '@aws-sdk/credential-provider-node': 3.972.88
       '@smithy/signature-v4': 5.7.4
       undici: 8.12.3
       ws: 8.22.0
-      zod: 4.4.3
+      zod: 4.6.7
 
   optionator@0.9.4:
     dependencies:
@@ -14623,11 +14621,11 @@ snapshots:
       unist-util-is: 6.0.1
       unist-util-visit-parents: 6.0.2
 
-  unlighthouse@0.19.1(7izzvrzg6cyrflmhgd3wlqg66y):
+  unlighthouse@0.19.1(2fagwjso5gcvithakag63qtma4):
     dependencies:
-      '@unlighthouse/cli': 0.19.1(zbuhrbcl2tnk6lffd6uregkb3m)
-      '@unlighthouse/client': 0.19.1(5w4tcz4bve3kdywsrub2q33qmy)
-      '@unlighthouse/core': 0.19.1(voq5jkwankzmvvpsur2z46kvmi)
+      '@unlighthouse/cli': 0.19.1(phmhc46e6u5725kr2glqxlex2i)
+      '@unlighthouse/client': 0.19.1(teo2elgbt6kb5uqbeab6zpcqrm)
+      '@unlighthouse/core': 0.19.1(3az2t2moazoocssdjnu7wyj6cq)
       c12: 3.3.4(magicast@0.5.5)
     optionalDependencies:
       puppeteer: 25.1.0
@@ -15198,13 +15196,11 @@ snapshots:
 
   yoga-layout@3.2.1: {}
 
-  zod-validation-error@4.0.2(zod@4.4.3):
+  zod-validation-error@4.0.2(zod@4.6.7):
     dependencies:
-      zod: 4.4.3
+      zod: 4.6.7
 
   zod@3.25.76: {}
-
-  zod@4.4.3: {}
 
   zod@4.6.7: {}
 
