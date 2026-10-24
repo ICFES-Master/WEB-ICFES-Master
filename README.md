@@ -27,7 +27,7 @@ La web de estudiantes está en [icfes-master.vercel.app](https://icfes-master.ve
   </a>
 </p>
 
-## ✨ Características
+## Características
 
 - Preguntas y temas del Saber 11.
 - Supabase compartido con el admin y la app.
@@ -36,13 +36,13 @@ La web de estudiantes está en [icfes-master.vercel.app](https://icfes-master.ve
 > [!NOTE]
 > El alcance es Colombia. Cada país arma el examen de otra forma, y este repo no lo generaliza.
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 - **Next.js 15, React 19 y Tailwind 4** — la plataforma.
 - **Supabase** — datos y sesión.
 - **pnpm 9.15.9** — scripts del repo.
 
-## 🚀 Inicio rápido
+## Inicio rápido
 
 ```bash
 cp .env.example .env.local
@@ -53,7 +53,7 @@ pnpm dev
 > [!IMPORTANT]
 > Copia `.env.example` a `.env.local` antes de `pnpm dev`. CI usa `ci.yml`.
 
-## 📖 Uso
+## Uso
 
 `pnpm test` corre la suite. El cobro de planes Free, Pro y Premium está apagado en 2026.
 
@@ -62,7 +62,7 @@ La decisión está en [docs/es/decisions/billing-no-2026.md](docs/es/decisions/b
 > [!TIP]
 > La guía larga está en `docs/es/`. La portada solo deja el arranque.
 
-## 🤝 Contribuir
+## Contribuir
 
 > [!CAUTION]
 > No actives el billing de 2026. `BILLING_ENABLED` queda en false a propósito.
@@ -72,10 +72,10 @@ Repositorio de [ICFES Master](https://github.com/ICFES-Master).
 > [!WARNING]
 > No subas `.env.local`. Las claves de Supabase se quedan en local.
 
-## 📄 Licencia
+## Licencia
 
 Apache-2.0. El texto está en [LICENSE](LICENSE).
 
-## 📚 Documentación
+## Documentación
 
 La documentación de producto está en `docs/es/`: setup, frontend, backend y decisiones.
