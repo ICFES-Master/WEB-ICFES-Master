@@ -1,112 +1,82 @@
-# Web Icfes Master - Master the ICFES from Scratch 📝
+<p align="center">
+  <a href="README.md">Español</a> · <a href="README.en.md">English</a>
+</p>
 
-
-<!-- presentacion-org -->
-
-Organization: **[ICFES Master](https://github.com/ICFES-Master)**
-
-| Dato | Enlace |
-| --- | --- |
-| Site | [icfes-master.vercel.app](https://icfes-master.vercel.app/) |
-| Repository | [ICFES-Master/WEB-ICFES-Master](https://github.com/ICFES-Master/WEB-ICFES-Master) |
-| Admin panel | [web-icfes-admin.vercel.app](https://web-icfes-admin.vercel.app) |
-| Mobile app | [app-icfes-master](https://github.com/ICFES-Master/app-icfes-master) (private) |
-
-This document is in English. [Versión en español](README.md)
-
-An interactive platform to practice questions and learn topics from the ICFES state exam (Saber 11) in Colombia. Built
-with **feature-based** architecture using Next.js 15, React 19, Tailwind CSS 4, and Supabase.
-
-Static assets (mascot, brand screenshots) live in **`src/assets/`** and are imported from `@/assets` (App Router + `next/image`). The favicon is at **`src/app/favicon.ico`** and the Open Graph image at **`src/app/opengraph-image.png`** (Next.js App Router file convention).
-
-> [!NOTE] The goal was to reach many more countries beyond Colombia, but each country handles education differently:
-> questions, topics, and subjects change. There are even countries where the exam is not mandatory or does not exist.
->
-> [!IMPORTANT] Free/Pro/Premium plan billing is **disabled for 2026** (`BILLING_ENABLED=false`). See
-> [decisions/billing-no-2026.md](docs/en/decisions/billing-no-2026.md).
-
-![Hero section of the ICFES platform - Master the ICFES from Scratch](src/assets/images/screenshot.png)
-
-![ICFES Master Open Graph image for social media previews](src/app/opengraph-image.png)
-
----
-
-## Table of Contents
-
-- [Web Icfes Master - Master the ICFES from Scratch 📝](#web-icfes-master---master-the-icfes-from-scratch-)
-  - [Table of Contents](#table-of-contents)
-  - [Main Features](#main-features)
-  - [Technical Documentation](#technical-documentation)
-  - [Steps to Contribute](#steps-to-contribute)
-    - [Contributors](#contributors)
-  - [Contact](#contact)
-
----
-
-## Main Features
-
-For Critical Reading, Social Studies, English, Mathematics, and Natural Sciences:
-
-- Concepts by subject area, interactive lessons, and questions tied to each lesson.
-- Practice with questions grouped by subject.
-- ICFES-style mock exams with time limits and full-format sessions.
-
----
-
-## Technical Documentation
-
-Folder: [`docs/en/`](docs/en/) — Index: [overview.md](docs/en/overview/overview.md)
-
-| Document                                                                | Description                     |
-| ----------------------------------------------------------------------- | ------------------------------- |
-| [installation.md](docs/en/setup/installation.md)                        | Local setup                     |
-| [configuration.md](docs/en/setup/configuration.md)                      | Environment variables and modes |
-| [technologies.md](docs/en/setup/technologies.md)                        | Full stack                      |
-| [routes.md](docs/en/setup/routes.md)                                    | Application URLs                |
-| [architecture.md](docs/en/frontend/architecture.md)                     | Feature-based rules             |
-| [project-structure.md](docs/en/overview/project-structure.md)           | Folder tree                     |
-| [components-guide.md](docs/en/frontend/components-guide.md)             | Components and hooks            |
-| [services-api.md](docs/en/backend/services-api.md)                      | Persistence and Supabase        |
-| [learning-structure-guide.md](docs/en/data/learning-structure-guide.md) | Roadmap (`learning_content`)    |
-| [cheatsheet.md](docs/en/setup/cheatsheet.md)                            | Quick reference                 |
-
-Spanish version: [`docs/es/`](docs/es/)
-
----
-
-## Steps to Contribute
-
-1. Fork the repository.
-2. Create a branch for your feature (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a Pull Request.
-
-### Contributors
-
-Thanks to everyone who has contributed to this project!
+<h1 align="center">ICFES Master</h1>
 
 <p align="center">
-  <a href="https://github.com/ICFES-Master/WEB-ICFES-Master/graphs/contributors">
-    <img
-      src="https://contrib.rocks/image?repo=ICFES-Master/WEB-ICFES-Master&max=500&columns=20"
-      alt="WEB-ICFES-Master contributors"
-    />
+  <img src="src/assets/images/screenshot.png" alt="Screenshot of the ICFES Master homepage" width="800">
+</p>
+
+<p align="center">Practice and topics for the ICFES Saber 11, in Colombia.</p>
+
+The student site is at [icfes-master.vercel.app](https://icfes-master.vercel.app/). The panel is [WEB-ICFES-Admin](https://github.com/ICFES-Master/WEB-ICFES-Admin) and the app is [app-icfes-master](https://github.com/ICFES-Master/app-icfes-master).
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/licencia-Apache--2.0-blue" alt="Licencia Apache 2.0"></a>
+  <a href="https://github.com/ICFES-Master/WEB-ICFES-Master/actions/workflows/ci.yml"><img src="https://github.com/ICFES-Master/WEB-ICFES-Master/actions/workflows/ci.yml/badge.svg" alt="CI status"></a>
+</p>
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nextjs,react,ts,tailwind,supabase,pnpm&theme=dark&perline=6">
+      <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=nextjs,react,ts,tailwind,supabase,pnpm&theme=light&perline=6">
+      <img alt="Next.js, React, TypeScript, Tailwind, Supabase, pnpm" src="https://skillicons.dev/icons?i=nextjs,react,ts,tailwind,supabase,pnpm&perline=6">
+    </picture>
   </a>
 </p>
 
----
+## ✨ Features
 
-## Contact
+- Saber 11 questions and topics.
+- Supabase shared with the admin and the app.
+- Apache-2.0 license, CI, and `pnpm test`.
 
-For suggestions or to report bugs, open an issue on the GitHub repository or internally through the platform.
+> [!NOTE]
+> The scope is Colombia. Each country builds the exam differently, and this repo does not generalize
+> that.
 
----
+## 🛠️ Tech stack
 
-**Development:** Fravelz
+- **Next.js 15, React 19, and Tailwind 4** — the platform.
+- **Supabase** — data and session.
+- **pnpm 9.15.9** — repo scripts.
 
-**License:** Apache License 2.0
+## 🚀 Quick start
 
----
+```bash
+cp .env.example .env.local
+pnpm install
+pnpm dev
+```
 
-_AI-generated file. Last updated: Wednesday, May 27, 2026._
+> [!IMPORTANT]
+> Copy `.env.example` to `.env.local` before `pnpm dev`. CI uses `ci.yml`.
+
+## 📖 Usage
+
+`pnpm test` runs the suite. Free, Pro, and Premium billing is off in 2026.
+
+The decision is in [docs/es/decisions/billing-no-2026.md](docs/es/decisions/billing-no-2026.md).
+
+> [!TIP]
+> The long guide is in `docs/es/`. This page only keeps the startup.
+
+## 🤝 Contributing
+
+> [!CAUTION]
+> Do not turn on 2026 billing. `BILLING_ENABLED` stays false on purpose.
+
+Repository of [ICFES Master](https://github.com/ICFES-Master).
+
+> [!WARNING]
+> Do not commit `.env.local`. Supabase keys stay local.
+
+## 📄 License
+
+Apache-2.0. The text is in [LICENSE](LICENSE).
+
+## 📚 Documentation
+
+Product documentation is in `docs/es/`: setup, frontend, backend, and decisions.
